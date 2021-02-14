@@ -8,27 +8,51 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="overlay" id="overlay">
+        <h3>searching now...</h3>
+    </div>
+
     <div class="hero-bg">
         <section class = "top">
             <header>
                 <a href="#">KidBlue.OW</a>
             </header>
 
-            <h1><span>The Healthy</span> Best Eating Experience </h1>
+            <h1><span>Overwatch</span> Best Player NA</h1>
 
-            <p>Your now looking at the best website in the world</p>
+            <p>You're now looking at the best website in the world</p>
 
             <div class="form-container">
                 <form action="">
-                     <label for="city"></label>
-                     <input type="
-                     " name="" id="">
+                    <div class="div-left">
+                        <label for="city">Enter your city</label>
+                        <input type="text" name ="city" id ="city">
+                        <p>Example: "Montreal"</p>
+                    </div>
+                    <input type="button" value="Find Gamer Now" id = "cta-btn">
                 </form>
             </div>
         </section>
-        <section>
-
-        </section>
     </div>
+    
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio ipsa repudiandae atque nam ducimus voluptate dolorum nobis laboriosam eius!</p>
+        </div>
+        <img src="images/OW.jpg" alt="Tracer">
+    </section>
+
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click', ()=> {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+            overlay.classList.remove('animate-overlay');
+            
+        })
+    </script>
 </body>
 </html>
