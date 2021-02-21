@@ -22,14 +22,14 @@ body {
     padding-bottom: 4em;
 }
 
-header{
+header {
     padding: 1em 0;
 
 }
 
 .hero-bg a{
     color:rgb(105, 206, 236);
-    text-decoration: none;
+     text-decoration: none; 
     font-weight: bold;
     font-size: 1.2rem;
 }
